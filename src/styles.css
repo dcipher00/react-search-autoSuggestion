@@ -1,0 +1,77 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.list {
+  list-style-type: none;
+  background-color: rgb(136, 139, 139);
+  padding: 1px;
+  margin: auto;
+  width: 61.5%;
+  position: relative;
+  top: -3px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  box-shadow: 0px 5px 30px rgb(179, 176, 176);
+}
+.listEle {
+  text-align: left;
+  color: white;
+  padding: 8px;
+  margin: 6px;
+}
+
+.input {
+  margin: auto;
+  border: none;
+  height: 40px;
+  margin-bottom: 50px;
+  background-color: rgb(175, 253, 253);
+  font-size: 22px;
+  width: 50%;
+  border-radius: 50px;
+  padding-left: 40%;
+  outline: none;
+  transition: 0.5s;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+}
+
+.input:focus {
+  border-radius: 0px;
+  border-top-right-radius: 15px;
+  background-color: rgb(172, 175, 175);
+  border-top-left-radius: 15px;
+  height: 50px;
+  padding-left: 10px;
+  margin: 0px;
+  width: 60%;
+}
+
+.input:focus + .editable {
+  top: 20%;
+  left: 20.7%;
+  display: block;
+  transition: 0.5s;
+}
+
+.editable {
+  position: absolute;
+  font-size: 17px;
+  padding: 3px;
+  top: 19.4%;
+  left: 44.5%;
+  color: #242323;
+  transition: 0.5s;
+  /* display:none; */
+}
+
+.editable::after {
+  position: absolute;
+  letter-spacing: 3px;
+  content: attr(data-placeholder);
+  pointer-events: none;
+  opacity: 0.5;
+  z-index: 1;
+}
