@@ -1,2 +1,2 @@
 # react-search-autoSuggestion
-Created with CodeSandbox
+React serach inpt with auto suggestions and user can press tab or Right Arrow to select the 1st suggestion
